@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  decription: MyString
+  duration: MyString
+  care_by: MyString
+
+two:
+  name: MyString
+  decription: MyString
+  duration: MyString
+  care_by: MyString

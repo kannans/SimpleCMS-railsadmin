@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  expire_date: 2013-11-11 17:46:27
+  is_done: false
+
+two:
+  title: MyString
+  description: MyText
+  expire_date: 2013-11-11 17:46:27
+  is_done: false
