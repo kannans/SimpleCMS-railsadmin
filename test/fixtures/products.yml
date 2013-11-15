@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  price: 9.99
+  expire_date: 2013-11-15
+  qty: 1
+  category_id: 1
+  is_active: false
+
+two:
+  name: MyString
+  price: 9.99
+  expire_date: 2013-11-15
+  qty: 1
+  category_id: 1
+  is_active: false
