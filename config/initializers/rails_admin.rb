@@ -1,6 +1,8 @@
 # RailsAdmin config file. Generated on November 15, 2013 15:39
 # See github.com/sferik/rails_admin for more informations
 
+
+
 RailsAdmin.config do |config|
 
 
@@ -16,7 +18,7 @@ RailsAdmin.config do |config|
   config.current_user_method { current_user } # auto-generated
 
   # If you want to track changes on your models:
-  # config.audit_with :history, 'User'
+  config.audit_with :history, 'User'
 
   # Or with a PaperTrail: (you need to install it first)
   # config.audit_with :paper_trail, 'User'
@@ -29,6 +31,7 @@ RailsAdmin.config do |config|
 
   # Exclude specific models (keep the others):
   config.excluded_models = ['Project', 'Task']
+
 
   # Include specific models (exclude the others):
   # config.included_models = ['Product', 'Category']

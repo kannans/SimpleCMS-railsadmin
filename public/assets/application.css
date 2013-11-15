@@ -12,3 +12,12 @@
 
  */
 
+.details , .details h2, .details h5{
+	width: 30%;
+}
+.img {
+	width: 100%;
+}
+.img img{
+	width: 10%;
+}
