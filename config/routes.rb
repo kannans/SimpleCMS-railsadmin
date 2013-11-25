@@ -3,13 +3,16 @@ RailsUi::Application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
-  resources :projects
 
 
   resources :tasks
 
 
   get "home/index"
+  get "home/sales"
+  post "home/purchase"
+
+
   root :to => 'home#index'
 
   # The priority is based upon order of creation:

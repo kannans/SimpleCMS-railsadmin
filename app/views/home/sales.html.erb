@@ -1,0 +1,21 @@
+<h3>Product details</h3>
+
+<form action="/home/purchase" method="post">
+	<table>
+		<tr>
+			<th>Product Name :</th>
+			<td><%= @product.name %></td>
+		</tr>
+		<tr>
+		   <th>Product price :</th>
+		   <td><%= number_to_currency(@product.price)%></td>
+		   <td> X <input type="number" name ="qty" value="0" /></td>
+		   <td> X <input type="hidden" name ="product" value="<%=@product.id%>" /></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td><input type="submit"  value="Sale"/></td>
+		</tr>
+
+	</table>
+</form>

@@ -9,7 +9,7 @@ RailsAdmin.config do |config|
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
-  config.main_app_name = ['Simple CMS']
+  config.main_app_name = ['Simple Inventory']
 
   # or for a more dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
@@ -75,6 +75,18 @@ config.model 'Category' do
     field :active
   end
 end
+
+config.model "Inventory" do
+  list do
+    field :product
+    field :total_products
+    field :total_sold_products
+    field :pending_products
+  end
+ edit do; end
+end
+
+
 
   ###  Project  ###
 

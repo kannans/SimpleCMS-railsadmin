@@ -5,4 +5,19 @@ class Product < ActiveRecord::Base
 
   validates :name, :price, :qty, :presence => true
 
+  after_save :update_inventory
+
+  def to_s
+  	name
+  end
+
+  def update_inventory
+  	inv = Inventory.find_by_product_id(self.id)
+  	if inv.nil?
+  	  Inventory.create(:product_id=>self.id, :total_products=>self.qty)
+  	else
+  	  inv.update_attributes(:total_products => self.qty)
+  	end
+  end
+
 end

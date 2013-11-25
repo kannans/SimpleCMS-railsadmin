@@ -3,14 +3,18 @@
 <div class='container'>
 	<% @products.each do |product|%>
 		<div class="details">
-			<h2><%= product.name %></h2>
+			<h2><%= link_to  product.name, home_sales_path(:id=>product)  %></h2>
 				<h5>Price:
 					<i><%= number_to_currency(product.price) %></i>
 				</h5>
+				<%= link_to "sale" , home_sales_path(:id=>product)  %>
+
 		</div>
 			<div class="img">
 				<%= image_tag product.cover_image.url unless  product.cover_image.nil? %>
 			</div>
 			<hr>
 	<% end %>
+
+
 </div>
