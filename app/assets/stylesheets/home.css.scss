@@ -25,7 +25,12 @@ body {
 }
 
 .rw-container{
-  a, h2{
+  a{
+    margin-left: 60%;
+    float: left;
+    margin-top: -105px;
+  }
+  h2{
     display: none;
   }
 
