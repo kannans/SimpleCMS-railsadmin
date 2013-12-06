@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   def purchase
   	order = OpenStruct.new(params)
   	product = Product.find(order.product)
-	product.qty =  product.qty- (order.qty.to_i)
+	    product.qty =  product.qty- (order.qty.to_i)
   		inv  = Inventory.find_by_product_id(product.id)
   		inv.total_products 		= inv.total_products - (order.qty.to_i)
   		inv.total_sold_products = inv.total_sold_products + order.qty.to_i

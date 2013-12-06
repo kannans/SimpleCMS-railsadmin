@@ -7,11 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= link_to "Admin" , "/admin" %>
+
 <% flash.each do |name, msg| %>
   <% if msg.is_a?(String) %>
     <%= content_tag :div, msg, :id => "flash_#{name}" %>
   <% end %>
 <% end %>
+
 <div class="rw-container">
   <%= yield %>
 </div>
